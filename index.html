@@ -12,7 +12,7 @@
         
     <nav id="menu">
         <h1 class="maintitle" style="margin-bottom: -0.28rem;">dba-paris.com</h1><br>
-        <h2>Strategy & Image Consultancy</h2>
+        <h2 style="font-size: 12px;">Strategy & Image Consultancy</h2>
         <div class="recent mainCat">
 	<h2 class="title">·  Clients  ·</h2><br>
       <span class="Clients texts">ANDAM Fashion Award</span><br>
@@ -51,6 +51,22 @@
             <span class="texts" style="background-color: #25fbff; color: #000000;">Strategy & Image</span><br>
             <span class="texts" style="background-color: #25fbff; color: #000000;">Dryce<br></span>
         </div>
+        <button id="myBtn">Open Info</button>
+<div id="myModal" class="modal">
+
+  <div class="modal-content" style="text-align: left;">
+    <span class="close">&times;</span>
+    <h1><b>DRYCE LAHSSAN</b></h1><br>
+    <h3><b>Fashion Strategist</b></h3><br>
+    <h5>POSITIONING AND ELEVATING BRAND PURPOSE THROUGH IMAGE AND STRATEGY</h5><br>
+    <p>Labelled the « Fashion whisperer » by VOGUE magazine, DRYCE is a designer, a global consultant and a creative director based in Paris. Consistently connecting the dots between emerging designers, trends and fashion historical knowledge. The french-moroccan consultant’s innovative practice and deep curiosity has made him one of the most trusted thinkers in his field for the past decade.
+    </p>
+    <p>Known for his role as a consultant for the ANDAM Fashion Award, Dryce has supported / collaborated on more than 50 fashion shows, hundreds of photo shoots and consulted for numerous publications, including VOGUE ITALIA. Applying his philosophy of ambitiousness in his collaborations with brands such as PRADA, VERSACE and VUITTON, Dryce’s keen eye for trend shifts makes him a kind of connector for our time: creating experiences for global audiences that feel like a peek in a possible future.</p>
+    <p>Dryce is an oracle, who keeps pushing the fashion world forward by constantly questioning its purpose, applying his unique expertise and activating his network to break the boundaries between fashion and society.</p>
+    <p>Ref : Acne Studios, Adidas, Andam Fashion Award, Barneys NY, Burberry, Bvlgari, Carven, Diesel, Galeries Lafayette, Halpern, Kenneth ize, L’officel, Lahssan, Louis Vuitton, LVMH Fashion Ventures, Maison Martin Margiela, Mary Katrantzou, Nensi Dojaka, OTB group, Pallas, Prada, Pucci, Rizzoli, Versace, Vogue Italia, Vogue Runway</p>
+  </div>
+
+</div>
 
         <div id="top-space">
         <h2 class="title">·   Contacts   ·</h2>
@@ -67,3 +83,29 @@
     
 </body>
 </html>
+<script>
+  var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
